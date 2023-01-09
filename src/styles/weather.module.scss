@@ -1,0 +1,216 @@
+@import './global.scss';
+.bgc{
+    background-color: rgb(148, 210, 232);
+    height: 100vh;
+    width: 100%;
+    .description{
+        z-index: 10;
+        margin: 0 auto;
+        padding-top: 75px;
+        width: 70%;
+        text-align: center;
+        h1{
+            width: 30%;
+            display: inline-block;
+            font-size: 2.5rem;
+        }
+        ul{
+            margin-top: 20px;
+            li{
+                margin: 10px 0;
+            }
+        }
+    }
+}
+.WeatherCardWrapper{
+    width: 25%;
+    position: fixed;
+    min-width: 320px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    padding: 30px 15px; 
+    top:225px;
+    left: 37.5%;
+    background-color: rgba(251, 251, 251, 0.665);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    .icon{
+        width: 100%;
+        height: 135px;
+        // animation: change 1.5s linear alternate infinite;
+
+        img{
+            display: block;
+            margin: 10px auto;
+            width: 120px;
+        }
+        
+    }
+    .tempareature{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        div{
+            width: 120px;
+            margin:10px 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        span{
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+
+        }
+        .rain{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            i{
+                font-size: 1.3rem;
+                line-height: 1.3rem;
+                margin-right: 10px;
+            }
+            span{
+                width: 120px;
+                font-size: 1.2rem;
+                line-height: 2rem;
+                text-align: start;
+            }
+        }
+    }
+    .date{
+        display: flex;
+        align-items: center; 
+        .dateWrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } 
+        .arrow i{
+            margin: 0 30px;
+            cursor: pointer;
+        }
+    }
+    span{
+        display: inline-block;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    select{
+        margin-top: 30px;
+        border: none;
+        padding: 5px 35px;
+        border-radius: 5px;
+        font-weight: 700;
+        background-color: rgb(251, 251, 178);
+        font-size: 1.2rem;
+    }
+    h5{
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+}
+
+
+.cloud1 {
+    // z-index: -1;
+    position: fixed;
+    top: 115px;
+    animation: flow1 25s linear infinite;
+    animation-direction: alternate;
+  }
+  .cloud2 {
+    // z-index: -1;
+    position: fixed;
+    right: 0;
+    top: 400px;
+    animation: flow2 25s linear infinite;
+    animation-direction: alternate;
+    width: 600px;
+  }
+  .cloud3 {
+    position: fixed;
+    top: 900px;
+    animation: flow1 30s linear infinite;
+    animation-direction: alternate;
+
+  }
+  .cloud4 {
+    position: absolute;
+    right: 0;
+    top: 175vh;
+    animation: flow2 30s linear infinite;
+    animation-direction: alternate;
+    
+
+  }
+  
+  @keyframes flow1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(78vw) ;
+    }
+  }
+  @keyframes flow2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform:  translateX(-78vw);
+    }
+  }
+  
+  
+  @media screen and (max-width: 390px){
+    @keyframes flow1 {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(30vw) ;
+      }
+    }
+    @keyframes flow2 {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform:  translateX(-30vw);
+      }
+    }
+  
+    .cloud1 {
+      position: absolute;
+      top: 10vh;
+      width: 100px;
+      animation: flow1 3s linear infinite;
+      animation-direction: alternate;
+    }
+    .cloud2 {
+      position: absolute;
+      right: 0;
+      top: 55vh;
+      animation: flow2 3s linear infinite;
+      animation-direction: alternate;
+      width: 100px;
+    }
+    .cloud3 {
+      position: absolute;
+      top: 145vh;
+      animation: flow1 1s linear infinite;
+    }
+    .cloud4 {
+      position: absolute;
+      right: 0;
+      top: 175vh;
+      animation: flow2 1s linear infinite;
+    }
+  }
+  
