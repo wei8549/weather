@@ -153,7 +153,7 @@ function Weather() {
             </div>
           </div>
           <div className={style.icon}>
-            <img src={`/img/weather_icon/${codeType()}.png`} alt="" />
+            <img src={`/img/weathericon/${codeType()}.png`} alt="" />
           </div>
           <div className={style.tempareature}>
             <div>
@@ -286,6 +286,7 @@ function Weather() {
       <img src="/img/cloud1.png" alt="" className={style.cloud2} />
       <img src="/img/cloud1.png" alt="" className={style.cloud3} />
       <img src="/img/cloud2.png" alt="" className={style.cloud4} />
+      <div className={style.test}></div>
     </>
   )
 }
