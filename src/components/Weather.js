@@ -153,7 +153,7 @@ function Weather() {
             </div>
           </div>
           <div className={style.icon}>
-            <img src={`/img/weather_icon/${codeType()}.png`} alt="" />
+            <img src={`./weather/img/weather_icon/${codeType()}.png`} alt="" />
           </div>
           <div className={style.tempareature}>
             <div>
