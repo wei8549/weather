@@ -153,7 +153,7 @@ function Weather() {
             </div>
           </div>
           <div className={style.icon}>
-            <img src={`./weather/img/weather_icon/${codeType()}.png`} alt="" />
+            <img src={`/img/weather_icon/${codeType()}.png`} alt="" />
           </div>
           <div className={style.tempareature}>
             <div>
@@ -280,12 +280,11 @@ function Weather() {
           </div>
           <h5>資料來源：中央氣象局</h5>
         </div>
-       
       </div>
-      <img src="./weather/img/cloud1.png" alt="" className={style.cloud1} />
-      <img src="./weather/img/cloud1.png" alt="" className={style.cloud2} />
-      <img src="./weather/img/cloud1.png" alt="" className={style.cloud3} />
-      <img src="./weather/img/cloud2.png" alt="" className={style.cloud4} />
+      <img src="/img/cloud1.png" alt="" className={style.cloud1} />
+      <img src="/img/cloud1.png" alt="" className={style.cloud2} />
+      <img src="/img/cloud1.png" alt="" className={style.cloud3} />
+      <img src="/img/cloud2.png" alt="" className={style.cloud4} />
     </>
   )
 }
